@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d51f589380.js"></script>
+    <title>Snake Game</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-[#849CFF]">
+    <div id="wrapper" class="bg-white w-[65vmin] h-[70vmin] flex overflow-hidden flex-col justify-center shadow-[0_20px_40px_rgba(52,87,220,0.2)] rounded-[5px] md:w-[90vmin] md:h-[115vmin]">
+        <div id="game-details" class="text-black font-medium text-[1.2rem] flex justify-between px-9 py-[20px] md:text-base md:px-9 md:py-5">
+            <span id="score" class="text-black">Score: 0</span>
+            <span id="high-score" class="text-black">Highest Score: 0</span>
+        </div>
+        <div id="play-board" class="h-full w-full grid grid-rows-[repeat(30,1fr)] grid-cols-[repeat(30,1fr)] bg-[#002060]"></div>
+        <div id="controls" class="hidden justify-between md:flex">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long text-center text-[1.3rem] bg-[#0066FF] text-white w-[calc(100%_/_4)] cursor-pointer px-0 py-[25px] border-r-[#00B79F] border-r border-solid md:text-base md:px-0 md:py-5"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long text-center text-[1.3rem] bg-[#0066FF] text-white w-[calc(100%_/_4)] cursor-pointer px-0 py-[25px] border-r-[#00B79F] border-r border-solid md:text-base md:px-0 md:py-5"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long text-center text-[1.3rem] bg-[#0066FF] text-white w-[calc(100%_/_4)] cursor-pointer px-0 py-[25px] border-r-[#00B79F] border-r border-solid md:text-base md:px-0 md:py-5"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long text-center text-[1.3rem] bg-[#0066FF] text-white w-[calc(100%_/_4)] cursor-pointer px-0 py-[25px] border-r-[#00B79F] border-r border-solid md:text-base md:px-0 md:py-5"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply box-border m-0 p-0;
+}
+
+#play-board {
+    grid-template-areas: none;
+}
+
+@layer base {
+    body {
+        font-family: Mooli;
+    }
+    #play-board .food {
+        background: #FE214F;
+    }
+    #play-board .head {
+        background: #32B8CB;
+    }
+}
